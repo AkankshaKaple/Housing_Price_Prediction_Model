@@ -1,0 +1,9 @@
+ {% extend "layout.html"%}
+ {% block content %}
+
+    {% for post in posts%}
+            <h1>"Information"</h1>
+            <p> Thi swebsite will provide you the price of house based on various parameters like number of bedrooms, bathrooms, etc. <br />{{post.Albem}}
+            </p>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,16 @@
+
+{% extends "layout.html" %}
+    {% block content %}
+
+       <div style="margin-left:40%;margin-top:20%;border-style:solid;border-width: 2px 2px 2px 2px;padding: 3%;border-radius:5%; border-color:pink;background-color:grey;" >
+
+       <form method="post" action="http://127.0.0.1:5000/result">
+       <pre><b>No.  of bedrooms: </b> <input type="text" name="bedrooms" align="center" width="48" height="48"><br></pre>
+       <pre><b>No. of bathrooms: </b> <input type="text" name="bathrooms" align="center" width="48" height="48"><br></pre>
+        <pre><b>Area of the house: </b><input type="text" name="area" align="center" width="48" height="48"><br></pre>
+        <center><input type="submit" value="Predict Price" alt="Submit" align="center" width="48" height="48"><br></center>
+       </form>
+       </div>
+
+
+    {% endblock content %}
